@@ -24,11 +24,23 @@ export function Content() {
             </div>
             <div className="content__block">
                 <div className="content__started">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div className="content__size">
+                        <div className="content__msg">
+                            Try Your&nbsp;<b>Free</b>&nbsp;Trial Today
+                        </div>
+                        <div className="content__input">
+                            <input type='text' placeholder='Name' />
+                        </div>
+                        <div className="content__input">
+                            <input type='text' placeholder='Email' />
+                        </div>
+                        <div className="content__input">
+                            <input type='text' placeholder='Password' />
+                        </div>
+                        <div className="content__submit">
+                            <input type="submit" value="Get Started"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
