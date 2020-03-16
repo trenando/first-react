@@ -23,7 +23,7 @@ export function Content() {
                 </a>
             </div>
             <div className="content__block">
-                <div>
+                <div className="content__started">
                     <div></div>
                     <div></div>
                     <div></div>

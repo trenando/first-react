@@ -41,6 +41,10 @@
       a {
         padding: 0 40px;
         color: #cccccc;
+        transition: color .3s linear;
+        &:hover{
+          color: #ff8b38;
+        }
         &:last-child {
           transform: rotate(45deg);
           margin-top: 5px;
