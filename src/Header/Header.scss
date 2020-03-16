@@ -1,0 +1,30 @@
+@import "../index.scss";
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 21px auto 0;
+  max-width: 1100px;
+
+  img {
+    margin-left: 10px;
+  }
+
+  .header__links {
+    font-weight: 600;
+    a {
+      margin-left: 45px;
+      transition: color .3s linear;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 10px;
+      }
+      &:hover {
+        color: #ff8b38;
+      }
+    }
+  }
+}
