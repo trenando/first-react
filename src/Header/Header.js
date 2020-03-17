@@ -1,19 +1,20 @@
 import React from 'react';
 import './Header.scss';
 import png1 from '../images/icons/1.png';
+import {Link} from 'react-router-dom';
 
 export function Header() {
     return (
         <div className="header__content">
-            <a href="/">
+            <Link to="/">
                 <img src={png1} alt="" />
-            </a>
+            </Link>
             <div className="header__links">
-                <a href="/features">Features</a>
-                <a href="/about">About</a>
-                <a href="/pricing">Pricing</a>
-                <a href="/reviews">Reviews</a>
-                <a href="/contact">Contact</a>
+                <Link to="/features">Features</Link>
+                <Link to="/about">About</Link>
+                <Link to="/pricing">Pricing</Link>
+                <Link to="/reviews">Reviews</Link>
+                <Link to="/contact">Contact</Link>
             </div>
         </div>
     );

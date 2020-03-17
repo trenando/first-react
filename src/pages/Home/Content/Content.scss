@@ -67,8 +67,8 @@
   transition-delay: 0.3s, 0.3s, 0.3s;
   transition-duration: 0.3s;
   &:hover {
-    border-color: #ff8b38;
-    color: #ff8b38;
+    border-color: $anime-color;
+    color: $anime-color;
     background-color: #fff;
   }
 }
@@ -101,7 +101,7 @@
   border-top-right-radius: 5px;
   b {
     text-transform: uppercase;
-    color: #ff8b38;
+    color: $anime-color;
   }
 }
 
@@ -129,7 +129,7 @@
   align-items: center;
   height: 55px;
   input {
-    background-color: #ff9b51;
+    background-color: $anime-color;
     width: 100%;
     height: 55px;
     border: none;

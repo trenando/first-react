@@ -5,11 +5,11 @@ import { Features } from './pages/Features/Features';
 import { Pricing } from './pages/Pricing/Pricing';
 import { Reviews } from './pages/Reviews/Reviews';
 import { Home } from './pages/Home/Home';
-import { BrowserRouter,Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 export function Router() {
     return (
-        <BrowserRouter>
+        <React.Fragment>
             <Route exact path="/">
                 <Home />
             </Route>
@@ -28,6 +28,6 @@ export function Router() {
             <Route path="/contact">
                 <Contact />
             </Route>
-        </BrowserRouter>
+        </React.Fragment>
     );
 }
