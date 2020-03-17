@@ -1,0 +1,30 @@
+@import "../../../index.scss";
+
+.buttons {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 130px;
+  margin-left: 20px;
+  a {
+    height: 110px;
+    width: 110px;
+    margin-bottom: 1px;
+  }
+  button {
+    height: 110px;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    background-color: #333333;
+    color: #fff;
+    text-transform: uppercase;
+    &:focus {
+      background-color: $anime-color;
+      outline: 1px solid red;
+    }
+  }
+}

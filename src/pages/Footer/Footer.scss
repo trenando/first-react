@@ -1,0 +1,47 @@
+@import "../../index.scss";
+
+.footer {
+  position: fixed;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background-color: #000;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: inherit;
+}
+
+.footer__icons {
+  width: 100%;
+  display: flex;
+  font-size: 24px;
+  margin-top: 20px;
+  justify-content: center;
+  line-height: 1.2;
+  a {
+    padding: 0 25px;
+    color: #cccccc;
+    transition: color 0.3s linear;
+    &:hover {
+      color: $anime-color;
+    }
+    &:last-child {
+      transform: rotate(45deg);
+      margin-top: 5px;
+    }
+  }
+}
+
+.footer__end {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #505050;
+}
