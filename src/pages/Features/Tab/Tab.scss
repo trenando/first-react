@@ -1,1 +1,56 @@
 @import "../../../index.scss";
+
+.tab {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-color: #f5f5f5;
+}
+
+.tab__content {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+.tab__size {
+  max-width: 500px;
+}
+
+.tab__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.tab__text {
+  color: #86878b;
+  font-size: 14px;
+}
+
+.tab__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  background-color: $anime-color;
+  margin-top: 20px;
+  transition-property: color;
+  transition-delay: 0.3s;
+  transition-duration: 0.3s;
+  &:hover {
+    color: purple;
+  }
+}

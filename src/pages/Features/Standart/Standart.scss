@@ -1,1 +1,44 @@
 @import "../../../index.scss";
+
+.standart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-color: #fff;
+}
+
+.standart__content {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin-right: 50px;
+  margin-left: 10px;
+}
+
+.standart__size {
+  max-width: 500px;
+}
+
+.standart__title {
+  font-size: 20px;
+  font-weight: 700;
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 64px;
+    background-color: $anime-color;
+    margin: 20px 0;
+  }
+}
+
+.standart__text {
+  color: #86878b;
+  font-size: 14px;
+}
