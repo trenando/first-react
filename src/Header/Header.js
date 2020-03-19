@@ -10,7 +10,7 @@ export function Header() {
                 <img src={png1} alt="" />
             </Link>
             <div className="header__links">
-                <Link to="/features">Features</Link>
+                <Link to="/features/tab">Features</Link>
                 <Link to="/about">About</Link>
                 <Link to="/pricing">Pricing</Link>
                 <Link to="/reviews">Reviews</Link>

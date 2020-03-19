@@ -1,0 +1,61 @@
+@import "../../index.scss";
+
+$about-color: #9d9ea1;
+
+.about__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 64px;
+    background-color: $anime-color;
+    margin: 20px auto;
+  }
+}
+
+.about__text {
+  text-align: center;
+  color: $about-color;
+}
+
+.about__block {
+  display: flex;
+  margin-top: 50px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.img__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  border: 1px solid $anime-color;
+  border-radius: 100%;
+}
+
+.about_subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.about_subtext {
+  color: $about-color;
+  text-align: center;
+}

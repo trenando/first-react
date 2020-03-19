@@ -4,7 +4,7 @@ import features1 from '../../../images/features/1.png';
 
 export function Tab() {
     return (
-        <div className="tab">
+        <div className="standart standart--gray">
             <div className="tab__content">
                 <div className="tab__size">
                     <div className="tab__title">

@@ -1,24 +1,11 @@
 @import "../../../index.scss";
 
-.standart {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: calc(100vh - 150px);
-  background-color: #f5f5f5;
-}
-
 .standart__content {
   display: flex;
   justify-content: space-between;
   width: 1100px;
   margin-right: 50px;
-  margin-left: 10px;
+  margin-left: 140px;
 }
 
 .standart__size {

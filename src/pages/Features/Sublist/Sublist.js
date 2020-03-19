@@ -5,7 +5,7 @@ import png3 from '../../../images/icons/3.png';
 
 export function Sublist() {
     return (
-        <div className="sublist">
+        <div className="standart standart--white">
             <div className="sublist__content">
                 <img src={features2} alt='' />
                 <div className="sublist__size">

@@ -4,7 +4,7 @@ import features3 from '../../../images/features/3.jpg';
 
 export function Standart() {
     return (
-        <div className="standart">
+        <div className="standart standart--gray">
             <div className="standart__content">
                 <div className="standart__size">
                     <div className="standart__title">

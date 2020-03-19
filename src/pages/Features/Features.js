@@ -9,7 +9,7 @@ export function Features() {
     return (
         <React.Fragment>
             <Buttons />
-            <Route path='/features/tab'>
+            <Route exact path='/features/tab'>
                 <Tab />
             </Route>
             <Route path='/features/sublist'>
