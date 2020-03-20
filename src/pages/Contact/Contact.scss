@@ -1,0 +1,85 @@
+@import "../../index.scss";
+
+$contact-color: #9d9ea1;
+
+.contact__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  &:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 64px;
+    background-color: $anime-color;
+    margin: 20px auto;
+  }
+}
+
+.contact__text {
+  text-align: center;
+  color: $contact-color;
+}
+
+.contact__inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contact__input {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 150px;
+  input {
+    border: none;
+    border-bottom: 1px solid $contact-color;
+    height: 36px;
+    margin-bottom: 21px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::placeholder {
+      padding-left: 10px;
+    }
+  }
+  textarea {
+    resize: none;
+    border: none;
+    border-bottom: 1px solid $contact-color;
+    height: 100%;
+    max-width: 100%;
+    &::placeholder {
+      padding-left: 10px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.contact__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 44px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: $anime-color;
+  border: none;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.25s linear;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: brown;
+  }
+}
