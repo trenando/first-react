@@ -6,7 +6,7 @@ import { Enterprice } from './Enterprice/Enterprice';
 
 export function Pricing() {
     return (
-        <div className="standart standart--gray">
+        <div className="standart standart--pricing">
             <div className="container">
                 <div className="pricing__title">
                     Pricing option
