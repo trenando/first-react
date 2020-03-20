@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.scss';
 import intro from '../../images/intro.jpg';
 import { Content } from './Content/Content';
-import {Footer} from "./Footer/Footer";
+import { Hfooter } from "./Hfooter/Hfooter";
 
 export function Home() {
     return (
@@ -11,7 +11,7 @@ export function Home() {
             <div className="content">
                 <Content />
             </div>
-            <Footer />
+            <Hfooter />
         </div>
     );
 } 
