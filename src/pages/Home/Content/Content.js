@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Content.scss';
 import png2 from '../../../images/icons/2.png';
 
 export function Content() {
+    const [reg, setReg] = useState(
+        {
+            name: "",
+            email: "",
+            password: ""
+        }
+    );
+
+    const changeReg = smth => e => {
+        setReg({ ...reg, [smth]: e.target.value });
+    };
+
+    const saveReg = () => {
+        localStorage.setItem('reg', JSON.stringify(reg));
+    };
+
     return (
         <div className="content__flex">
             <div className="content__block">
@@ -29,16 +45,16 @@ export function Content() {
                             Try Your&nbsp;<b>Free</b>&nbsp;Trial Today
                         </div>
                         <div className="content__input">
-                            <input type='text' placeholder='Name' />
+                            <input value={reg.name} type='text' placeholder='Name' onChange={changeReg("name")} />
                         </div>
                         <div className="content__input">
-                            <input type='text' placeholder='Email' />
+                            <input value={reg.email} type='text' placeholder='Email' onChange={changeReg("email")} />
                         </div>
                         <div className="content__input">
-                            <input type='text' placeholder='Password' />
+                            <input value={reg.password} type='password' placeholder='Password' onChange={changeReg("password")} />
                         </div>
                         <div className="content__submit">
-                            <input type="submit" value="Get Started"/>
+                            <input onClick={saveReg} type="submit" value="Get Started" />
                         </div>
                     </div>
                 </div>

@@ -55,13 +55,6 @@ $text-color: #fff;
   width: 340px;
   height: 120px;
   background-color: $content-color;
-  &:after {
-    content: "";
-    display: block;
-    height: 5px;
-    width: 340px;
-    background-color: $anime-color;
-  }
 }
 
 .pricing__flex {
@@ -86,6 +79,13 @@ $text-color: #fff;
   text-align: center;
   color: $pricing-color;
   font-weight: 600;
+  &:after {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 340px;
+    background-color: $anime-color;
+  }
 }
 
 .pricing__list {

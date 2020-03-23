@@ -1,8 +1,42 @@
 import React from 'react';
 import './Reviews.scss';
 import png7 from '../../images/icons/7.png';
+import { ReviewsContent } from './ReviewsContent/ReviewsContent';
 
 export function Reviews() {
+    const content = [
+        {
+            message: `Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Doloribus
+            accusamus expedita repellat similique
+            odio aspernatur ex, architecto eaque
+            quo suscipit.`,
+            png: png7,
+            name: "Jeremy H.",
+            prof: "Manager"
+        },
+        {
+            message: `Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Doloribus
+            accusamus expedita repellat similique
+            odio aspernatur ex, architecto eaque
+            quo suscipit.`,
+            png: png7,
+            name: "John S.",
+            prof: "Freelancer"
+        },
+        {
+            message: `Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Doloribus
+            accusamus expedita repellat similique
+            odio aspernatur ex, architecto eaque
+            quo suscipit.`,
+            png: png7,
+            name: "Susan W.",
+            prof: "Photographer"
+        }
+    ]
+
     return (
         <div className="standart standart--white">
             <div className="container">
@@ -13,60 +47,7 @@ export function Reviews() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
                 <div className="reviews__block">
-                    <div className="reviews__message">
-                        <div className="reviews__subtext">
-                            <p>
-                                Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Doloribus
-                                accusamus expedita repellat similique
-                                odio aspernatur ex, architecto eaque
-                                quo suscipit.
-                            </p>
-                        </div>
-                        <div className="reviews__one">
-                            <img src={png7} alt="" />
-                            <div className="reviews__person">
-                                <div className="reviews__name">Jeremy H.</div>
-                                <div className="reviews__prof">Manager</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="reviews__message">
-                        <div className="reviews__subtext">
-                            <p>
-                                Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Doloribus
-                                accusamus expedita repellat similique
-                                odio aspernatur ex, architecto eaque
-                                quo suscipit.
-                            </p>
-                        </div>
-                        <div className="reviews__one">
-                            <img src={png7} alt="" />
-                            <div className="reviews__person">
-                                <div className="reviews__name">John S.</div>
-                                <div className="reviews__prof">Freelancer</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="reviews__message">
-                        <div className="reviews__subtext">
-                            <p>
-                                Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit. Doloribus
-                                accusamus expedita repellat similique
-                                odio aspernatur ex, architecto eaque
-                                quo suscipit.
-                            </p>
-                        </div>
-                        <div className="reviews__one">
-                            <img src={png7} alt="" />
-                            <div className="reviews__person">
-                                <div className="reviews__name">Susan W.</div>
-                                <div className="reviews__prof">Photographer</div>
-                            </div>
-                        </div>
-                    </div>
+                    {content.map(data => <ReviewsContent {...data} />)}
                 </div>
             </div>
         </div>

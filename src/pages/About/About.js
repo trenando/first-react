@@ -3,8 +3,27 @@ import './About.scss';
 import png4 from "../../images/icons/4.png";
 import png5 from "../../images/icons/5.png";
 import png6 from "../../images/icons/6.png";
+import { AboutContent } from './AboutContent/AboutContent';
 
 export function About() {
+    const content = [
+        {
+            png: png4,
+            title: "Thoughtful Design",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra."
+        },
+        {
+            png: png5,
+            title: "Well Crafted",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra."
+        },
+        {
+            png: png6,
+            title: "Easy to Customize",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra."
+        }
+    ]
+
     return (
         <div className="standart standart--white">
             <div className="container">
@@ -15,45 +34,7 @@ export function About() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
                 <div className="about__block">
-                    <div className="about__content">
-                        <div className="img__about">
-                            <img src={png4} alt='' />
-                        </div>
-                        <div className="about_subtitle">
-                            Thoughtful Design
-                        </div>
-                        <div className="about_subtext">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Aenean euismod bibendum laoreet. Proin gravida
-                            dolor sit amet lacus accumsan et viverra.
-                        </div>
-                    </div>
-                    <div className="about__content">
-                        <div className="img__about">
-                            <img src={png5} alt='' />
-                        </div>
-                        <div className="about_subtitle">
-                            Well Crafted
-                        </div>
-                        <div className="about_subtext">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Aenean euismod bibendum laoreet. Proin gravida
-                            dolor sit amet lacus accumsan et viverra.
-                        </div>
-                    </div>
-                    <div className="about__content">
-                        <div className="img__about">
-                            <img src={png6} alt='' />
-                        </div>
-                        <div className="about_subtitle">
-                            Easy to Customize
-                        </div>
-                        <div className="about_subtext">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Aenean euismod bibendum laoreet. Proin gravida
-                            dolor sit amet lacus accumsan et viverra.
-                        </div>
-                    </div>
+                    {content.map(data => <AboutContent {...data} />)}
                 </div>
             </div>
         </div>
