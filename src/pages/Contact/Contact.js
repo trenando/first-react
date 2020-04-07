@@ -1,7 +1,11 @@
 import React from 'react';
 import './Contact.scss';
+import ContactForm  from './ContactForm/ContactForm'
 
-export function Contact() {
+export function Contact(props) {
+    const onSubmit = (values) =>{
+        props.addContact(values)
+    }
     return (
         <div className="standart standart--white">
             <div className="container">
@@ -11,17 +15,7 @@ export function Contact() {
                 <div className="contact__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
-                <div className="contact__inputs">
-                    <div className="contact__input">
-                        <input type="text" placeholder="Name" />
-                        <input type="text" placeholder="Email" />
-                        <input type="text" placeholder="Subject" />
-                    </div>
-                    <div className="contact__input">
-                        <textarea type="text" placeholder="Message" />
-                    </div>
-                </div>
-                <button className="contact__btn">Send Message</button>
+                <ContactForm onSubmit={onSubmit}/>
             </div>
         </div>
     );

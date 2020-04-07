@@ -1,6 +1,6 @@
 import React from 'react';
 import { About } from './pages/About/About';
-import { Contact } from './pages/Contact/Contact';
+import { ContactContainer } from './pages/Contact/ContactContainer';
 import { Features } from './pages/Features/Features';
 import { Pricing } from './pages/Pricing/Pricing';
 import { Reviews } from './pages/Reviews/Reviews';
@@ -31,7 +31,7 @@ export function Router() {
                 <Footer />
             </Route>
             <Route path="/contact">
-                <Contact />
+                <ContactContainer />
                 <Footer />
             </Route>
         </React.Fragment>
