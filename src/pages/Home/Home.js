@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import intro from '../../images/intro.jpg';
-import { Content } from './Content/Content';
+import { ContentContainer } from './Content/ContentContainer';
 import { Hfooter } from "./Hfooter/Hfooter";
 
 export function Home() {
@@ -9,7 +9,7 @@ export function Home() {
         <div className="home">
             <img src={intro} alt='' />
             <div className="content">
-                <Content />
+                <ContentContainer />
             </div>
             <Hfooter />
         </div>
