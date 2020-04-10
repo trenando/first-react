@@ -15,12 +15,13 @@ const initialState = {
 export function contactReducer(state = initialState, action) {
     switch (action.type) {
         case ADD_CONTACT:
+            const {name, email, subject, message} = action.values;
             const newContact = {
                 id: Date.now(),
-                name: action.values.name,
-                email: action.values.email,
-                subject: action.values.subject,
-                message: action.values.message
+                name: name,
+                email: email,
+                subject: subject,
+                message: message
             }
             return {
                 ...state,

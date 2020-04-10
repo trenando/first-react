@@ -2,12 +2,6 @@ import { addTrialAC } from '../../../redux/homeReducer'
 import { Content } from './Content'
 import { connect } from 'react-redux'
 
-const mapStateToProps = (state) => {
-    return {
-
-    }
-}
-
 const mapDispatchToProps = (dispatch) => {
     return {
         addTrial: (values) => {
@@ -16,4 +10,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export const ContentContainer = connect(mapStateToProps, mapDispatchToProps)(Content)
+export const ContentContainer = connect(null, mapDispatchToProps)(Content)

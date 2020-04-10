@@ -2,12 +2,6 @@ import { addContactAC } from '../../redux/contactReducer'
 import { connect } from 'react-redux'
 import { Contact } from './Contact'
 
-const mapStateToProps = (state) => {
-    return {
-
-    }
-}
-
 const mapDispatchToProps = (dispatch) => {
     return {
         addContact: (values) => {
@@ -16,4 +10,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export const ContactContainer = connect(mapStateToProps, mapDispatchToProps)(Contact)
+export const ContactContainer = connect(null, mapDispatchToProps)(Contact)

@@ -24,7 +24,7 @@ export function Content(props) {
                 </div>
                 <a className="content__btn" href="/">
                     Download
-                </a>
+                </a>        
             </div>
             <div className="content__block">
                 <div className="content__started">
