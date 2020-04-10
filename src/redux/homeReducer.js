@@ -14,11 +14,12 @@ const initialState = {
 export function homeReducer(state = initialState, action) {
     switch (action.type) {
         case ADD_TRIAL:
+            const { name, email, password } = action.values
             const newTrial = {
                 id: Date.now(),
-                name: action.values.name,
-                email: action.values.email,
-                password: action.values.password
+                name: name,
+                email: email,
+                password: password
             }
             return {
                 ...state,
