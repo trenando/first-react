@@ -6,22 +6,22 @@ export function Footer() {
         <footer className="footer">
             <div className='footer__content'>
                 <div className="footer__icons">
-                    <a href="/">
+                    <a href={process.env.PUBLIC_URL}>
                         <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="/">
+                    <a href={process.env.PUBLIC_URL}>
                         <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="/">
+                    <a href={process.env.PUBLIC_URL}>
                         <i className="fab fa-google-plus-g"></i>
                     </a>
-                    <a href="/">
+                    <a href={process.env.PUBLIC_URL}>
                         <i className="fab fa-pinterest"></i>
                     </a>
-                    <a href="/">
+                    <a href={process.env.PUBLIC_URL}>
                         <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="/">
+                    <a href={process.env.PUBLIC_URL}>
                         <i className="fas fa-wifi"></i>
                     </a>
                 </div>

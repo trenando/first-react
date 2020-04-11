@@ -19,7 +19,7 @@ export function Tab() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
                         bibendum laoreet.
                     </div>
-                    <a className="tab__btn" href="/">
+                    <a className="tab__btn" href={process.env.PUBLIC_URL}>
                         Download
                     </a>
                 </div>

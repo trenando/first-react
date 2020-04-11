@@ -22,7 +22,7 @@ export function Content(props) {
                     euismod bibendum laoreet. Proin gravida dolor sit amet lacus
                     accumsan et viverra justo commodo.
                 </div>
-                <a className="content__btn" href="/">
+                <a className="content__btn" href={process.env.PUBLIC_URL}>
                     Download
                 </a>        
             </div>
