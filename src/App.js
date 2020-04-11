@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 function App() {
     return (
         <div className="section">
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <div className="header">
                     <Header />
                 </div>
